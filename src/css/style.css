@@ -1,0 +1,77 @@
+html{
+    font-size: 22px;
+    overflow-x: clip;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #2176FF;
+}
+.banner{
+    color:#2176FF;
+    margin-top:0;
+    padding:0;
+}
+#headerName{
+    display: flex;
+    padding:0;
+}
+
+#nameWorkout{
+}
+
+#io{
+    color: #2176FF;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+.searchBar{
+    width: 100%;
+    padding:0;
+    background-color: #2176FF;
+    border: 2px white solid;
+}
+#name{
+    width: 85%;
+    height:50px;
+    margin:10px 10px;
+    padding: 0;
+}
+#submit{
+    width:10%;
+    height: 55px;
+    background-color: lawngreen;
+    border-radius: 10px;
+    padding:0;
+    margin:0 5px;
+}
+.workoutDisplay{
+    background-color: beige;
+    margin: 0;
+    height:50vh;
+}
+
+.footer{
+    position: static;
+    z-index: 1;
+    background-color: #2176FF;
+    height: 100px;
+    width: 100%;
+    margin:0;
+    padding: 0;
+    bottom: 0;
+}
