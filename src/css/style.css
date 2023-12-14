@@ -62,21 +62,31 @@ body{
 .workoutDisplay{
     background-color: beige;
     margin: 0;
-    height:50vh;
 }
 
 .card-container{
     width:80%;
     margin:4rem auto;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card{
+    display: none; /* for logic to reveal element when user types */
     padding:2rem;
-    box-shadow: 0 0 .4rem .4rem rgba(0,0,0,0.2);
+    margin: 10px;
+    box-shadow: 0 0 .2rem .2rem rgba(0,0,0,0.2);
     background-color: red;
+}
+
+.card-heading{
+    color:white;
+    margin: 0;
+}
+.card-body{
+    color: white;
+    margin: 0;
 }
 
 .footer{

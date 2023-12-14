@@ -23,7 +23,7 @@
     <form action="" id="searchForm">
       <label for="name"></label>
       <input type="text" id="name" placeholder="Enter Your Name">
-      <input type="submit" placeholder="Submit" id="submit">
+      <input type="submit" value="Clear" id="submit">
     </form>
   </div>
 
@@ -43,8 +43,19 @@
 </html>
 
 <script>
+  const bodyDiv = document.querySelector(".workoutDisplay")
   const element = document.getElementById("a");
   if(element){
     element.parentElement.style.backgroundColor = 'blue';
+    //element.parentElement.style.display = 'revert';
   }
+
+  document.getElementById("name").addEventListener('keyup',()=>{
+    const inputText = document.getElementById("name").value;
+    document.getElementById(inputText).parentElement.style.display = 'revert';
+  });
+
+  document.getElementById('submit').addEventListener('click',()=>{
+    document.getElementsByClassName('card').style.display = 'none';
+  })
 </script>
