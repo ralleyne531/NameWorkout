@@ -73,7 +73,6 @@ body{
 }
 
 .card{
-    display: none; /* for logic to reveal element when user types */
     padding:2rem;
     margin: 10px;
     box-shadow: 0 0 .2rem .2rem rgba(0,0,0,0.2);

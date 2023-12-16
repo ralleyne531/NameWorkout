@@ -4,16 +4,42 @@ const cardData = [{"letter":"a","exercise":"starJumps"},{"letter":"b","exercise"
 
 const postContainer = document.querySelector(".card-container");
 
-const postMethods = () => {
-    cardData.forEach((postData) => {
-        const postElement = document.createElement("div");
-        postElement.classList.add('card');
-        postElement.innerHTML= `
-        <h3 class="card-heading" id=${postData.letter}>${postData.letter}</h3>
-        <p class="card-body">${postData.exercise}</p>
+function getExerciseForLetter(letter){
+    let matchingCard = cardData.find(card => card.letter === letter);
+    return matchingCard.exercise;
+}
+const postCard = (letter,exercise) => {
+    const postElement = document.createElement("div");
+    postElement.classList.add('card');
+    postElement.innerHTML= `
+        <h3 class="card-heading" id=${letter}>${letter}</h3>
+        <p class="card-body">${exercise}</p>
         `
-        postContainer.appendChild(postElement);
-    })
+    postContainer.appendChild(postElement);
+}
+function showLetterCard(letter){
+    const cards = document.querySelectorAll(`.card[id="${letter}"]`);
+    cards.forEach(card =>{
+        card.style.display = 'revert';
+    });
 }
 
-postMethods()
+nameInput = document.getElementById("name");
+nameInput.addEventListener("input",()=>{
+    let inputValue = nameInput.value;
+    
+    postContainer.innerHTML = '';
+    
+    for(let i = 0; i < inputValue.length; i++){
+        let currentLetter = inputValue[i];
+        let exercise = getExerciseForLetter(currentLetter);
+        postCard(currentLetter,exercise);
+        showLetterCard(currentLetter);
+    }
+});
+document.getElementById('submit').addEventListener('click',()=>{
+    nameInput.value = '';
+    document.querySelectorAll('.card').forEach(card =>{
+        card.style.display = 'none';
+    })
+})
