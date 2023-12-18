@@ -1,14 +1,15 @@
-html{
-    font-size: 22px;
-    overflow-x: clip;
+html,body{
+    height: 100%;
     margin: 0;
     padding: 0;
 }
-body{
+html{
+    font-size: 22px;
+    overflow-x: clip;
+}
+body {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
 }
 
 .header{
@@ -25,9 +26,11 @@ body{
 #headerName{
     display: flex;
     padding:0;
+    align-items: baseline;
 }
 
 #nameWorkout{
+    font-size: 5rem;
 }
 
 #io{
@@ -38,6 +41,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: black;
+    flex: 1 0 auto;
 }
 .searchBar{
     width: 100%;
@@ -60,6 +64,7 @@ body{
     margin:0 5px;
 }
 .workoutDisplay{
+    height: 100%;
     background-color: beige;
     margin: 0;
 }
@@ -76,7 +81,7 @@ body{
     padding:2rem;
     margin: 10px;
     box-shadow: 0 0 .2rem .2rem rgba(0,0,0,0.2);
-    background-color: red;
+    background-color: #2176FF;
 }
 
 .card-heading{
@@ -89,12 +94,30 @@ body{
 }
 
 .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: static;
     z-index: 1;
     background-color: #2176FF;
-    height: 100px;
     width: 100%;
     margin:0;
     padding: 0;
     bottom: 0;
+}
+
+.image-container{
+    display: flex;
+}
+.image-container a{
+    color: #121212;
+    transition: all 0.5s;
+}
+
+.image-container a:hover{
+    scale: 1.5;
+}
+.image-container i{
+    font-size: 2rem;
+    margin: 0 25px 0 25px;
 }

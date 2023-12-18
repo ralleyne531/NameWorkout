@@ -31,7 +31,7 @@ nameInput.addEventListener("input",()=>{
     postContainer.innerHTML = '';
     
     for(let i = 0; i < inputValue.length; i++){
-        let currentLetter = inputValue[i];
+        let currentLetter = inputValue[i].toLowerCase();
         let exercise = getExerciseForLetter(currentLetter);
         postCard(currentLetter,exercise);
         showLetterCard(currentLetter);
