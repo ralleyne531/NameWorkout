@@ -10,13 +10,18 @@ html{
 body {
     display: flex;
     flex-direction: column;
+    background-color: #FAF9F6;
 }
-
+h3, h4{
+    margin: 4px auto;
+    font-size: 0.75rem;
+}
 .header{
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 5px solid #2176FF;
+;
 }
 .banner{
     color:#2176FF;
@@ -30,7 +35,7 @@ body {
 }
 
 #nameWorkout{
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 #io{
@@ -47,7 +52,7 @@ body {
     width: 100%;
     padding:0;
     background-color: #2176FF;
-    border: 2px white solid;
+    border: 2px #FAF9F6 solid;
 }
 #name{
     width: 85%;
@@ -55,17 +60,18 @@ body {
     margin:10px 10px;
     padding: 0;
 }
+
 #submit{
     width:10%;
     height: 55px;
     background-color: lawngreen;
     border-radius: 10px;
     padding:0;
-    margin:0 5px;
+    margin-left: 25px;
 }
 .workoutDisplay{
     height: 100%;
-    background-color: beige;
+    background-color:#FAF9F6;
     margin: 0;
 }
 
@@ -118,6 +124,6 @@ body {
     scale: 1.5;
 }
 .image-container i{
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 0 25px 0 25px;
 }

@@ -8,12 +8,14 @@ function getExerciseForLetter(letter){
     let matchingCard = cardData.find(card => card.letter === letter);
     return matchingCard.exercise;
 }
+
+const randMultipleOfFive = () => (Math.floor(Math.random() * 5) + 1) * 5;
 const postCard = (letter,exercise) => {
     const postElement = document.createElement("div");
     postElement.classList.add('card');
     postElement.innerHTML= `
-        <h3 class="card-heading" id=${letter}>${letter}</h3>
-        <p class="card-body">${exercise}</p>
+        <h3 class="card-heading" id=${letter}>${letter.toUpperCase()}</h3>
+        <p class="card-body">${randMultipleOfFive() + " " + exercise}</p>
         `
     postContainer.appendChild(postElement);
 }
