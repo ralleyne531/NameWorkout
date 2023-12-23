@@ -12,9 +12,9 @@ console.log(exerciseList);
 let data = [];
 
 for (i=0; i <26 ; i++){
-    data.push({letter: exerciseList[i][0], exercise:exerciseList[i][1]});
+    data.push({letter: exerciseList[i][0], exercise: exerciseList[i][1]});
 }
-fs.writeFile ("exerciseAssignments.json", JSON.stringify(data), function(err) {
+fs.writeFile ("exerciseAssignments.json", JSON.stringify(data, null,1), function(err) {
         if (err) throw err;
         console.log('complete');
     }
