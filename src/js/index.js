@@ -1,4 +1,5 @@
-const cardData = [{
+
+const cardData =[{
     "letter": "a",
     "exercise": "starJumps"
 }, {
@@ -89,15 +90,20 @@ function getExerciseForLetter(letter){
 }
 
 const randMultipleOfFive = () => (Math.floor(Math.random() * 5) + 1) * 5;
+cardData.forEach((card) =>{
+    card.exercise = randMultipleOfFive() + " " + card.exercise;
+})
+
 const postCard = (letter,exercise) => {
     const postElement = document.createElement("div");
     postElement.classList.add('card');
     postElement.innerHTML= `
         <h3 class="card-heading" id=${letter}>${letter.toUpperCase()}</h3>
-        <p class="card-body">${randMultipleOfFive() + " " + exercise}</p>
+        <p class="card-body">${exercise}</p>
         `
     postContainer.appendChild(postElement);
 }
+
 function showLetterCard(letter){
     const cards = document.querySelectorAll(`.card[id="${letter}"]`);
     cards.forEach(card =>{
@@ -119,9 +125,14 @@ nameInput.addEventListener("input",()=>{
         showLetterCard(currentLetter);
     }
 });
+
 document.getElementById('submit').addEventListener('click',()=>{
     nameInput.value = '';
     document.querySelectorAll('.card').forEach(card =>{
         card.style.display = 'none';
     })
 })
+
+document.getElementById('darkMode').addEventListener('change', function() {
+    document.body.classList.toggle('dark-mode', this.checked);
+});

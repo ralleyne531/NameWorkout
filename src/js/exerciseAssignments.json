@@ -1,106 +1,107 @@
 [
- {
-  "letter": "a",
-  "exercise": "starJumps"
- },
- {
-  "letter": "b",
-  "exercise": "starJumps"
- },
- {
-  "letter": "c",
-  "exercise": "starJumps"
- },
- {
-  "letter": "d",
-  "exercise": "pushUps"
- },
- {
-  "letter": "e",
-  "exercise": "starJumps"
- },
- {
-  "letter": "f",
-  "exercise": "squats"
- },
- {
-  "letter": "g",
-  "exercise": "pushUps"
- },
- {
-  "letter": "h",
-  "exercise": "squats"
- },
- {
-  "letter": "i",
-  "exercise": "squats"
- },
- {
-  "letter": "j",
-  "exercise": "pushUps"
- },
- {
-  "letter": "k",
-  "exercise": "pushUps"
- },
- {
-  "letter": "l",
-  "exercise": "pushUps"
- },
- {
-  "letter": "m",
-  "exercise": "starJumps"
- },
- {
-  "letter": "n",
-  "exercise": "starJumps"
- },
- {
-  "letter": "o",
-  "exercise": "lunges"
- },
- {
-  "letter": "p",
-  "exercise": "pushUps"
- },
- {
-  "letter": "q",
-  "exercise": "squats"
- },
- {
-  "letter": "r",
-  "exercise": "pushUps"
- },
- {
-  "letter": "s",
-  "exercise": "pushUps"
- },
- {
-  "letter": "t",
-  "exercise": "squats"
- },
- {
-  "letter": "u",
-  "exercise": "lunges"
- },
- {
-  "letter": "v",
-  "exercise": "starJumps"
- },
- {
-  "letter": "w",
-  "exercise": "starJumps"
- },
- {
-  "letter": "x",
-  "exercise": "squats"
- },
- {
-  "letter": "y",
-  "exercise": "starJumps"
- },
- {
-  "letter": "z",
-  "exercise": "pushUps"
- }
-]
+  {
+   "letter": "a",
+   "exercise": "lunges"
+  },
+  {
+   "letter": "b",
+   "exercise": "starJumps"
+  },
+  {
+   "letter": "c",
+   "exercise": "lunges"
+  },
+  {
+   "letter": "d",
+   "exercise": "lunges"
+  },
+  {
+   "letter": "e",
+   "exercise": "lunges"
+  },
+  {
+   "letter": "f",
+   "exercise": "starJumps"
+  },
+  {
+   "letter": "g",
+   "exercise": "lunges"
+  },
+  {
+   "letter": "h",
+   "exercise": "pushUps"
+  },
+  {
+   "letter": "i",
+   "exercise": "squats"
+  },
+  {
+   "letter": "j",
+   "exercise": "lunges"
+  },
+  {
+   "letter": "k",
+   "exercise": "pushUps"
+  },
+  {
+   "letter": "l",
+   "exercise": "lunges"
+  },
+  {
+   "letter": "m",
+   "exercise": "starJumps"
+  },
+  {
+   "letter": "n",
+   "exercise": "squats"
+  },
+  {
+   "letter": "o",
+   "exercise": "pushUps"
+  },
+  {
+   "letter": "p",
+   "exercise": "pushUps"
+  },
+  {
+   "letter": "q",
+   "exercise": "pushUps"
+  },
+  {
+   "letter": "r",
+   "exercise": "squats"
+  },
+  {
+   "letter": "s",
+   "exercise": "pushUps"
+  },
+  {
+   "letter": "t",
+   "exercise": "starJumps"
+  },
+  {
+   "letter": "u",
+   "exercise": "pushUps"
+  },
+  {
+   "letter": "v",
+   "exercise": "lunges"
+  },
+  {
+   "letter": "w",
+   "exercise": "squats"
+  },
+  {
+   "letter": "x",
+   "exercise": "lunges"
+  },
+  {
+   "letter": "y",
+   "exercise": "lunges"
+  },
+  {
+   "letter": "z",
+   "exercise": "squats"
+  }
+ ]
+
