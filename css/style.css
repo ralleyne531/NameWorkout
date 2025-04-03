@@ -1,0 +1,206 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 22px;
+    overflow-x: clip;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAF9F6;
+    transition: background-color 0.3s;
+}
+h3, h4{
+    margin: 4px auto;
+    font-size: 0.75rem;
+}
+
+#darkMode-label{
+    width:75px;
+    height: 25px;
+    position: relative;
+    display: block;
+    background: #ffffff;
+    border-radius: 50px;
+    box-shadow: inset 0 5px 15px rgba(0,0,0,0.4), inset 0 -5px 15px rgba(255,255,255,0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#darkMode-label:after{
+    content:"";
+    width:35px;
+    height:20px;
+    position: absolute;
+    top:2px;
+    left:2px;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 180px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+#darkMode{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+#darkMode:checked + #darkMode-label{
+    background:#121212;
+}
+
+#darkMode:checked + #darkMode-label:after{
+    left:73px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #777,#121212);
+}
+
+body.dark-mode .main{
+    background-color: #121212;
+}
+body.dark-mode .footer{
+    color: #FAF9F6;
+}
+body.dark-mode .header,
+body.dark-mode .main,
+body.dark-mode .workoutDisplay {
+    background-color: #1e1e1e;
+    color: #fafafa;
+}
+body.dark-mode .card {
+    background-color: #333;
+    color: #fafafa;
+}
+
+body.dark-mode .searchBar {
+    background-color: #333;
+    color: #fafafa;
+}
+
+body.dark-mode input[type="text"],
+body.dark-mode input[type="submit"] {
+    background-color: #444;
+    color: #fafafa;
+    border: 2px solid #333;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #2176FF;
+;
+}
+.banner{
+    color:#2176FF;
+    margin-top:0;
+    padding:0;
+}
+#headerName{
+    display: flex;
+    padding:0;
+    align-items: baseline;
+}
+
+#nameWorkout{
+    font-size: 3rem;
+}
+
+#io{
+    color: #2176FF;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    flex: 1 0 auto;
+}
+.searchBar{
+    width: 100%;
+    padding:0;
+    background-color: #2176FF;
+    border: 2px #FAF9F6 solid;
+}
+#name{
+    width: 85%;
+    height:50px;
+    margin:10px 10px;
+    padding: 0;
+}
+
+#name::placeholder{
+    font-size: 2em;
+}
+
+#submit{
+    width:10%;
+    height: 55px;
+    background-color: lawngreen;
+    border-radius: 10px;
+    padding:0;
+    margin-left: 25px;
+}
+.workoutDisplay{
+    height: 100%;
+    background-color:#FAF9F6;
+    margin: 0;
+
+}
+
+.card-container{
+    width:80%;
+    margin:4rem auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    padding:2rem;
+    margin: 10px;
+    box-shadow: 0 0 .2rem .2rem rgba(0,0,0,0.2);
+    background-color: #2176FF;
+}
+
+.card-heading{
+    color:white;
+    margin: 0;
+}
+.card-body{
+    color: white;
+    margin: 0;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    z-index: 1;
+    background-color: #2176FF;
+    width: 100%;
+    margin:0;
+    padding: 0;
+    bottom: 0;
+    transition: background-color 0.3s;
+}
+
+.image-container{
+    display: flex;
+}
+.image-container a{
+    color: #121212;
+    transition: all 0.5s;
+}
+
+.image-container a:hover{
+    scale: 1.5;
+}
+.image-container i{
+    font-size: 1.5rem;
+    margin: 0 25px 0 25px;
+}
