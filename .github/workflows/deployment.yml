@@ -27,7 +27,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: gh-pages  # The branch that GitHub Pages will serve from
-          folder: src  # The folder containing your built files, change it if necessary
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          github_token: ${{ secrets.GH_TOKEN }}
+          publish_branch: gh-pages  # The branch that GitHub Pages will serve from
+          publish_dir: src  # The folder containing your built files, change it if necessary
